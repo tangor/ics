@@ -1,0 +1,17 @@
+page-contact {
+  .search-bar {
+    // background-color: $tabs-background;
+    // padding-top: 1px;
+    button {
+      background-color: $tabs-background;
+      margin-top: 0px;
+      padding: 5px;
+
+      .button-inner {
+        background-color: #FFF;
+        color: #DDD;
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>chat-list</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+  <ion-searchbar color="primary"
+                 [(ngModel)]="queryText"
+                 (ionInput)="updateChatList()"
+                 placeholder="搜索">
+  </ion-searchbar>
+</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+</ion-content>

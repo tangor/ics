@@ -1,0 +1,14 @@
+{
+  "TITLE":    "欢迎使用APP",
+  "HOME":     "首页",
+  "CONTACT":  "联系人",
+  "ME":       "我",
+  "SETTINGS": "设置",
+  "ABOUT":    "关于",
+  "CANCEL":   "取消",
+  "OK":       "确认",
+
+  "LOGIN":    "登录",
+  "USERNAME": "用户名",
+  "PASSWORD": "密码"
+}

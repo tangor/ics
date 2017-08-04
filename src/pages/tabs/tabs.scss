@@ -1,0 +1,24 @@
+#tabs.tabs {
+  .tabbar.show-tabbar {
+    padding-top: 2px;
+  }
+  
+  .tab-button {
+    min-height: 30px;
+  }
+
+  .tab-button-icon {
+    font-size: 24px;
+    height: 24px;
+    margin: 0px;
+  }
+
+  .tab-button-text {
+    margin-top: -5px;
+  }
+
+  span.tab-button-text {
+    font-size: 12px;
+    -webkit-transform:scale(0.7);
+  }
+}
