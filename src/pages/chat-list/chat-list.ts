@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { Chat } from '../../interfaces/user-data'
+import { ChatPage } from '../chat/chat';
+
+import { ChatService } from '../../providers/chatService';
 
 @Component({
   selector: 'page-chat-list',
@@ -10,21 +13,23 @@ import { Chat } from '../../interfaces/user-data'
 export class ChatListPage {
   queryText = '';
 
-  chats;
+  chats = [];
 
   constructor(
     public navCtrl: NavController,
-    public navParams: NavParams) {
-      this.chats = [{
-        id: '1',
-        avatar: "assets/img/avatar-ts-barbie.png",
-        nickname: "测试人员",
-        last_send_at: new Date(),
-        last_massage: "测试信息来一串"
-      }]
+    public navParams: NavParams,
+    private chatService: ChatService) {
+  }
+
+  ionViewWillEnter() {
   }
 
   ionViewDidLoad() {
+    this.chatService.getChats().then(data => this.chats = data);
+    // this.chatService.getChats().subscribe((chats) => {
+    //   this.chats = chats;
+    // });
+    console.log(this.chats);
     console.log('ionViewDidLoad ChatListPage');
   }
 
@@ -32,4 +37,7 @@ export class ChatListPage {
 
   }
 
+  gotoChat(chat) {
+    this.navCtrl.push(ChatPage, { chatId: chat.id });
+  }
 }

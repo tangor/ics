@@ -14,7 +14,7 @@
 <ion-content padding>
   <div class='chat-list'>
     <div *ngFor="let chat of chats">
-      <div class="chat_item">
+      <div class="chat_item" (click)="gotoChat(chat)">
         <div class="avatar">
           <img class="img" src={{chat.avatar}} />
         </div>

@@ -22,6 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { AuthService } from '../providers/authService';
 import { UserService } from '../providers/userService';
+import { ChatService } from '../providers/chatService';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -47,7 +48,11 @@ export function createTranslateLoader(http: Http) {
       useFactory: (createTranslateLoader),
       deps: [Http]
     }),
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {}, {
+      links: [
+        { component: ChatPage, name: 'ChatPage', segment: 'chat/:chatId' }
+      ]
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -67,6 +72,7 @@ export function createTranslateLoader(http: Http) {
     SplashScreen,
     AuthService,
     UserService,
+    ChatService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

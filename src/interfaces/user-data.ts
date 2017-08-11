@@ -2,14 +2,14 @@ export interface User {
   id: string,
   username: string,
   nickname: string,
-  password: string,
+  // password: string,
   avarta: string
 }
 
 export interface Message {
   id: string,
-  sender: User,
-  receiver: User,
+  sender_id: string,
+  // receiver: User,
   type: string,
   content: any,
   send_at: Date

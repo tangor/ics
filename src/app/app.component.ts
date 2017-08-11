@@ -4,7 +4,7 @@ import { Platform, NavController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import {TranslateService } from 'ng2-translate'
+import { TranslateService } from 'ng2-translate'
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';

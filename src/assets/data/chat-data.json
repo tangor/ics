@@ -1,0 +1,31 @@
+{
+  "chat-list": [{
+    "id": "1",
+    "avatar": "assets/img/avatar-ts-barbie.png",
+    "nickname": "测试人员1",
+    "last_send_at": "2017-05-17",
+    "last_massage": "测试信息来一串",
+    "messages": [{
+      "id": "1",
+      "sender_id": "1",
+      "sender_name": "测试人员1",
+      "sender_at": "2017-05-17",
+      "type": "plain",
+      "content": "测试信息来一串"
+    }, {
+      "id": "2",
+      "sender_id": "2",
+      "sender_name": "测试人员2",
+      "sender_at": "2017-05-17",
+      "type": "plain",
+      "content": "测试信息来一串"
+    }]
+  },{
+    "id": "2",
+    "avatar": "assets/img/avatar-ts-bopeep.png",
+    "nickname": "测试人员2",
+    "last_send_at": "2017-05-17",
+    "last_massage": "测试信息来一串"
+  }]
+
+}
